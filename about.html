@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">  <! -- CSS --> 
+        <title>Win Wings</title>
+        <script>
+            function check() {
+                if (document.getElementById("freeq").value == "no") {
+                    document.getElementById("checking").innerHTML = "Ok me neihter";
+                }
+                else if (document.getElementById("freeq").value == "yes"){
+                    document.getElementById("checking").innerHTML = "Ok fine";
+                }
+                else {
+                    document.getElementById("checking").innerHTML = "waht? yes/no";
+                }
+            }
+        </script>
+    </head>
+    <body style="background-color:#82e0aa;">
+        <h1>Win Wings</h1>  <! -- Subtitle --> 
+        <div>
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="games.html">Games</a>
+        <a href="youtube.html">YouTube</a>
+        </div>
+        <p></p>
+        <h2>What I do</h2>
+        <p>
+            <table style="width:20%">
+                <tr> 
+                    <th>Games</th>
+                    <th>Watch</th>
+                    <th>Schol</th>
+                </tr>
+                <tr>
+                    <td>Fortite</td>
+                    <td>JoJo</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>LoL</td>
+                    <td>Youtube</td>
+                    <td>Still No</td>
+                </tr>
+            </table>
+        </p>
+		<p>
+		
+		</p>
+        <p>
+            <h4>Do you like school??? (yes/no)</h4>
+            <h5 id="checking"></h5>
+            <p>
+                <input id="freeq" type="text">
+                <button id="buton" onclick='check()'>Submit</button>
+            </p>
+        </p>
+        <script>
+            var enter = document.getElementById("freeq");
+            enter.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    document.getElementById("buton").click();
+                }
+            });
+        </script>
+        <h2 style="color:yellow;">Menu</h2>
+        <p>
+        <img src="fotos/menu.jpg" width="463" height="600" alt="Menu Win Wings">
+    </body>
+</html>

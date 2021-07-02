@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<link href="styles.css" rel="stylesheet">
+	<head>
+        <link href="styles.css" rel="stylesheet">
+        <title>{% blocktitle %}{% endblock %}</title>
+		<link rel="icon" href="fotos/win wings logo.png" type="image/icon type">
+		<p>
+		<img href="index.html" src="fotos/win wings logo.jpg" width="150" height="150" alt="Win Wings Logo">
+		<h3 style="color:yellow;">Las Mejores Alitas de Chetumal</h3>
+		</p>
+	</head>
+    <body style="background-color:Black">
+        <div>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Menu</a>
+        <a href="games.html">Promociones</a>
+        <a href="youtube.html">Redes Sociales</a>
+        </div>
+		 {% block main %}{% endblock %}
+    </body>
+</html>

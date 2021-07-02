@@ -1,0 +1,16 @@
+a {
+    border: 2px solid white;   
+    color: yellow;
+    margin:5px;
+    padding:2px;
+	text-decoration:none
+}
+h1, h2, h3, h4, h5, div, p {text-align: center;}
+table, tr, td, th {text-align:center;
+border: 1px solid black;
+border-collapse: collapse;}
+th {background-color: green;
+color: white;}
+table {margin-left: auto;
+margin-right: auto;}
+h2 {color:white;}
