@@ -2,7 +2,8 @@
 
 <html lang="en">
 	<head>
-		<link rel="import" href="myheadertemplate.html">
+        <link href="styles.css" rel="stylesheet">
+		<link rel="import" href="layout.html">
 	</head>
     <body style="background-color:Black">
         <div>
@@ -23,8 +24,33 @@
 		<img src="fotos/bbq wings 1.jpg" width="300" height="239" alt="BBQ Wings">
 		<img src="fotos/buffalo wings 1.jpg" width="300" height="239" alt="Buffalo Wings">
 		</p>
+		<template id="template">
+		  <script>
+			const button = document.getElementById('click-me');
+			button.addEventListener('click', event => alert(event));
+		  </script>
+		  <style>
+			#click-me {
+			  all: unset;
+			  background: tomato;
+			  border: 0;
+			  border-radius: 4px;
+			  color: white;
+			  font-family: Helvetica;
+			  font-size: 1.5rem;
+			  padding: .5rem 1rem;
+			}
+		  </style>
+		  <button id="click-me">Log click event</button>
+		</template>
 		<script>
-		var content = document.querySelector('link[rel="import"]').import;
+		'use strict';
+
+		const template = document.getElementById('template');
+
+		document.body.appendChild(
+		  document.importNode(template.content, true)
+		);
 		</script>
     </body>
 </html>
