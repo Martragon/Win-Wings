@@ -1,9 +1,11 @@
-{% extend layout.html%}
-{% blocktitle %}
-Win Wings
-{% endblock %}
+<!DOCTYPE html>
 
-{% block main %}
+<html lang="en">
+	<head>
+        <link href="styles.css" rel="stylesheet">
+		<link rel="import" href="layout.html">
+	</head>
+    <body style="background-color:Black">
         <div>
         <a href="index.html">Inicio</a>
         <a href="about.html">Menu</a>
@@ -22,4 +24,8 @@ Win Wings
 		<img src="fotos/bbq wings 1.jpg" width="300" height="239" alt="BBQ Wings">
 		<img src="fotos/buffalo wings 1.jpg" width="300" height="239" alt="Buffalo Wings">
 		</p>
-{% endblock %}
+		<script>
+		var content = document.querySelector('link[rel="import"]').import;
+		</script>
+    </body>
+</html>
