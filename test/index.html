@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "layout.html" %}
 
-<h1>Welcome to my home page!</h1>
-<p>Some text.</p>
-<p>Some more text.</p>
-<?php include 'footer.php';?>
+{% block body %}
 
-</body>
-</html>
+    <form action="/greet" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+
+{% endblock %}
